@@ -1,0 +1,16 @@
+{
+  "name": "infusionsoft_lambda",
+  "version": "1.0.0",
+  "description": "poc of aws lambda function for microservice to do create/update of infusionsoft contacts",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "infusionsoft": "^0.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mconlin",
+  "license": "ISC"
+}
