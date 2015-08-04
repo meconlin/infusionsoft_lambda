@@ -43,6 +43,18 @@ To get started I recommend [this great tutorial on using AWS Lambda](http://docs
 }
 ```
 
+**firstName/lastName** : contact first and lastname  
+**email** : contacts should be considered unique in your Infusionsoft CRM by email  
+**tagId** : this must be the unique ID of the behavior you wish to attribute to this user (eg. report saved, account created). 
+
+### Improvements
+This is a fun POC, but there is much to do to master deploying production ready micro services. 
+
+Some ideas:  
+- setup AWS Lambda logging configuration, maybe Cloudwatch -> S3 bucket?
+- lookup tagId by tagname, not count on id from client
+- extend shell setup create API in front of the function using the new [API Gateway](http://aws.amazon.com/documentation/apigateway/)
+- asynch vs. request response function... whats my real goal here
 
 
 
