@@ -1,6 +1,6 @@
 ## InfusionSoft Create/Update Contact - AWS Lambda MicroService
 
-InfusionSoft create/update contact node.js application designed to be used as an [AWS Lambda Function](). 
+InfusionSoft create/update contact node.js application designed to be used as an [AWS Lambda Function](https://aws.amazon.com/lambda/). 
 Once deployed this micro service will add/update, opt-in, and tag a contact in highly scalable fashion. 
 
 ### Requirements
@@ -14,7 +14,7 @@ Once deployed this micro service will add/update, opt-in, and tag a contact in h
 - infusionsoft account with api key
 
 ### Backstory
-A rails application at work uses the (infusionsoft gem)[] to start marketing campaigns for a user once they perform a specific action. 
+A rails application at work uses the [infusionsoft gem](https://github.com/nateleavitt/infusionsoft) to start marketing campaigns for a user once they perform a specific action. 
 
 Whenever a contact is added or performs a behavior we wish to;
 - call add/update contact with dup check
@@ -23,10 +23,10 @@ Whenever a contact is added or performs a behavior we wish to;
 
 This requires three networks calls (create/update, optin, tag with behavior). 
 As an experiement I created a micro-service using AWS Lambda making this into a single call for our web/mobile product.  
-Yes, of course I could simply accomplish this using a [sidekiq]() worker but what fun would that have been? 
+Yes, of course I could simply accomplish this using a [sidekiq](https://github.com/mperham/sidekiq) worker but what fun would that have been? 
 
 ### Usage
-To get started I recommend [this great tutorial on using AWS Lambda](). 
+To get started I recommend [this great tutorial on using AWS Lambda](http://docs.aws.amazon.com/lambda/latest/dg/getting-started-custom-events.html). 
 
 - clone this repo
 - create zip file index.zip ```$>zip -r index.zip index.js config.js node_modules/*```
