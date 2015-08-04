@@ -55,6 +55,9 @@ Some ideas:
 - lookup tagId by tagname, not count on id from client
 - extend shell setup create API in front of the function using the new [API Gateway](http://aws.amazon.com/documentation/apigateway/)
 - asynch vs. request response function... whats my real goal here
+- retry on failure?
+- schedule for later?
+- status of job/call?
 
 
 
